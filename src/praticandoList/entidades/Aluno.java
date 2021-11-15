@@ -122,12 +122,4 @@ public class Aluno {
                 ", média : " + calculaMedia(this.notas) +
                 '}';
     }
-
-    public int[] teste() {
-        int num = 1;
-        int num2 = 9;
-        int[] valores = new int[]{num, num2};
-
-        return valores;
-    }
 }
