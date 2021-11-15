@@ -9,6 +9,11 @@ public class Aluno {
     private int matricula;
     private double[] notas;
 
+    public static List<Aluno> alunos = new ArrayList<>();
+    public static List<Aluno> maioresMedias;
+    public static List<Aluno> menoresMedias;
+    public static List<Aluno> [] statusAlunos;
+
     public Aluno() {
 
     }
@@ -17,6 +22,10 @@ public class Aluno {
         this.nome = nome;
         this.matricula = matricula;
         this.notas = notas;
+    }
+
+    public static void adicionaAluno(Aluno aluno){
+        alunos.add(aluno);
     }
 
     public String getNome() {
