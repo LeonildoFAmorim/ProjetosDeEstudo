@@ -1,4 +1,4 @@
-package associacao.trabalhador.entidades;
+package associacao_enumeracao_trabalhador.entidades;
 
 import java.util.ArrayList;
 import java.util.Calendar;

@@ -1,7 +1,6 @@
 package praticandoList.aplicacao;
 
 import praticandoList.entidades.Aluno;
-
 import java.util.Scanner;
 
 public class AlunoTeste {

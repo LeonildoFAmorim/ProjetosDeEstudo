@@ -1,4 +1,4 @@
-package associacao.trabalhador.aplicacao;
+package associacao_enumeracao_trabalhador.aplicacao;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -6,10 +6,10 @@ import java.util.Date;
 import java.util.Locale;
 import java.util.Scanner;
 
-import associacao.trabalhador.entidades.ContratoHora;
-import associacao.trabalhador.entidades.Departamento;
-import associacao.trabalhador.entidades.NivelTrabalhador;
-import associacao.trabalhador.entidades.Trabalhador;
+import associacao_enumeracao_trabalhador.entidades.ContratoHora;
+import associacao_enumeracao_trabalhador.entidades.Departamento;
+import associacao_enumeracao_trabalhador.entidades.NivelTrabalhador;
+import associacao_enumeracao_trabalhador.entidades.Trabalhador;
 
 public class Programa {
 
