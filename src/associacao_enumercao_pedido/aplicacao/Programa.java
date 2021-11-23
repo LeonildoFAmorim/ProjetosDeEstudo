@@ -23,7 +23,7 @@ public class Programa {
 
         System.out.println("Entre com os dados do pedido:");
         Date momentoDoPedido = new Date();
-        System.out.print("Status: ");
+        System.out.print("Status: (PENDENTE, PROCESSANDO, ENVIADO, ENTREGUE): ");
         String statusPedido = scanner.next();
         Pedido pedido = new Pedido(momentoDoPedido, StatusPedido.valueOf(statusPedido), cliente);
 

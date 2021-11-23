@@ -14,7 +14,7 @@ public class Pedido {
     private Cliente cliente;
     public List<ItemPedido> itensPedidos = new ArrayList<>();
 
-    private Pedido(){
+    private Pedido() {
 
     }
 
@@ -24,17 +24,17 @@ public class Pedido {
         this.cliente = cliente;
     }
 
-    public void adicionaItem(ItemPedido itemPedido){
+    public void adicionaItem(ItemPedido itemPedido) {
         itensPedidos.add(itemPedido);
     }
 
-    public void removeItem(ItemPedido itemPedido){
+    public void removeItem(ItemPedido itemPedido) {
         itensPedidos.remove(itemPedido);
     }
 
-    public double calculaPrecoTotal(){
+    public double calculaPrecoTotal() {
         double soma = 0;
-        for (ItemPedido itemPedido : itensPedidos){
+        for (ItemPedido itemPedido : itensPedidos) {
             soma += itemPedido.subTotal();
         }
         return soma;

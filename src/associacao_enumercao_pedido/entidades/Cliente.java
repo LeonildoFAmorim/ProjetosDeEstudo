@@ -1,5 +1,6 @@
 package associacao_enumercao_pedido.entidades;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Cliente {
@@ -7,7 +8,9 @@ public class Cliente {
     private String email;
     private Date dataAniversario;
 
-    public Cliente(){
+    private static final SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+
+    public Cliente() {
 
     }
 
@@ -44,7 +47,7 @@ public class Cliente {
     @Override
     public String toString() {
         return
-                "Nome: " + nome + '\'' +
-                ", email: " + email + '\'';
+                "Nome: " + nome + " (" + sdf.format(dataAniversario) + ")" + '\''
+                        + ", email: " + email + '\'';
     }
 }
