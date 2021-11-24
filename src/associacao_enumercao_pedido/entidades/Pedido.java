@@ -64,10 +64,6 @@ public class Pedido {
         this.cliente = cliente;
     }
 
-    public List<ItemPedido> getItensPedidos() {
-        return itensPedidos;
-    }
-
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
