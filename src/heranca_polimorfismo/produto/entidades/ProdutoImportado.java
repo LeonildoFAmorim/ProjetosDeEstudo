@@ -4,7 +4,7 @@ public class ProdutoImportado extends Produto {
     private double taxaAlfandega;
 
     public ProdutoImportado() {
-
+        super();
     }
 
     public ProdutoImportado(String nome, double preco, double taxaAlfandega) {

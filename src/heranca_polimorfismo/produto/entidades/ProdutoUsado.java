@@ -9,7 +9,7 @@ public class ProdutoUsado extends Produto {
     SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
     public ProdutoUsado() {
-
+        super();
     }
 
     public ProdutoUsado(String nome, double preco, Date dataFabricacao) {
