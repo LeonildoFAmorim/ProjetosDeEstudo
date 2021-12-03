@@ -1,4 +1,4 @@
-package associacao_enumeracao_trabalhador.aplicacao;
+package associacao_enumeracao.trabalhador.aplicacao;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -6,10 +6,10 @@ import java.util.Date;
 import java.util.Locale;
 import java.util.Scanner;
 
-import associacao_enumeracao_trabalhador.entidades.ContratoHora;
-import associacao_enumeracao_trabalhador.entidades.Departamento;
-import associacao_enumeracao_trabalhador.entidades.NivelTrabalhador;
-import associacao_enumeracao_trabalhador.entidades.Trabalhador;
+import associacao_enumeracao.trabalhador.entidades.ContratoHora;
+import associacao_enumeracao.trabalhador.entidades.Departamento;
+import associacao_enumeracao.trabalhador.entidades.NivelTrabalhador;
+import associacao_enumeracao.trabalhador.entidades.Trabalhador;
 
 public class Programa {
 
@@ -23,9 +23,9 @@ public class Programa {
         System.out.println("Entre com os dados do trabalhador:");
         System.out.print("Nome: ");
         String nome = sc.next();
-        System.out.print("Nível (JUNIOR, PLENO, SENIOR): ");
+        System.out.print("Nivel (JUNIOR, PLENO, SENIOR): ");
         String nivel = sc.next();
-        System.out.print("Salário base: ");
+        System.out.print("Salario base: ");
         double salarioBase = sc.nextDouble();
         Trabalhador trabalhador = new Trabalhador(nome, NivelTrabalhador.valueOf(nivel), salarioBase, new Departamento(departamento));
 
@@ -37,12 +37,12 @@ public class Programa {
             Date data = sdf.parse(sc.next());
             System.out.print("Valor por hora: ");
             double valorHora = sc.nextDouble();
-            System.out.print("Duração (horas): ");
+            System.out.print("Duracao (horas): ");
             int qtdHoras = sc.nextInt();
             ContratoHora contrato = new ContratoHora(data, valorHora, qtdHoras);
             trabalhador.adicionarContrato(contrato);
         }
-        System.out.print("Entre com o mês e ano para calcular a renda (MM/AAAA): ");
+        System.out.print("Entre com o mes e ano para calcular a renda (MM/AAAA): ");
         String mesAno = sc.next();
         int mes = Integer.parseInt(mesAno.substring(0, 2));
         int ano = Integer.parseInt(mesAno.substring(3));

@@ -1,4 +1,4 @@
-package associacao_enumeracao_trabalhador.entidades;
+package associacao_enumeracao.trabalhador.entidades;
 
 public class Departamento {
     private String nome;

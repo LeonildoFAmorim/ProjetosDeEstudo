@@ -1,6 +1,7 @@
-package praticandoList.aplicacao;
+package atributos_metodos_estaticos_listas.aluno.aplicacao;
 
-import praticandoList.entidades.Aluno;
+import atributos_metodos_estaticos_listas.aluno.entidades.Aluno;
+
 import java.util.Scanner;
 
 public class AlunoTeste {

@@ -1,4 +1,4 @@
-package praticandoList.entidades;
+package atributos_metodos_estaticos_listas.aluno.entidades;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -12,7 +12,7 @@ public class Aluno {
     public static List<Aluno> alunos = new ArrayList<>();
     public static List<Aluno> maioresMedias;
     public static List<Aluno> menoresMedias;
-    public static List<Aluno> [] statusAlunos;
+    public static List<Aluno>[] statusAlunos;
 
     public Aluno() {
 
@@ -24,7 +24,7 @@ public class Aluno {
         this.notas = notas;
     }
 
-    public static void adicionaAluno(Aluno aluno){
+    public static void adicionaAluno(Aluno aluno) {
         alunos.add(aluno);
     }
 

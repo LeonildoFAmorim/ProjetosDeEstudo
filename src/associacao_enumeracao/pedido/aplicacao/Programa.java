@@ -1,6 +1,6 @@
-package associacao_enumercao_pedido.aplicacao;
+package associacao_enumeracao.pedido.aplicacao;
 
-import associacao_enumercao_pedido.entidades.*;
+import associacao_enumeracao.pedido.entidades.*;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -17,7 +17,7 @@ public class Programa {
         String nome = scanner.nextLine();
         System.out.print("Email: ");
         String email = scanner.next();
-        System.out.print("Data de aniversário: ");
+        System.out.print("Data de aniversario: ");
         Date dataAniversario = sdf.parse(scanner.next());
         Cliente cliente = new Cliente(nome, email, dataAniversario);
 
@@ -34,7 +34,7 @@ public class Programa {
             System.out.println("Entre com os dados do item #" + i);
             System.out.print("Nome do produto: ");
             String nomeProduto = scanner.next();
-            System.out.print("Preço do produto: ");
+            System.out.print("Valor do produto: ");
             double preco = scanner.nextDouble();
             Produto produto = new Produto(nomeProduto, preco);
             System.out.print("Quantidade: ");

@@ -1,4 +1,4 @@
-package associacao_enumercao_pedido.entidades;
+package associacao_enumeracao.pedido.entidades;
 
 public class Produto {
     private String nome;
