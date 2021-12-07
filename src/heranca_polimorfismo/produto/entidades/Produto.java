@@ -1,8 +1,8 @@
 package heranca_polimorfismo.produto.entidades;
 
 public class Produto {
-    private String nome;
-    private double preco;
+    protected String nome;
+    protected double preco;
 
     public Produto() {
 
