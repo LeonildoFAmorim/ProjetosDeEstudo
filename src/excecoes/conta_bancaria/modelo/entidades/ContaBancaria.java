@@ -8,7 +8,7 @@ public class ContaBancaria {
     private double saldo;
     private double limiteSaque;
 
-    public ContaBancaria(){
+    public ContaBancaria() {
 
     }
 
@@ -47,11 +47,11 @@ public class ContaBancaria {
         this.limiteSaque = limiteSaque;
     }
 
-    public void depositar(double valor){
+    public void depositar(double valor) {
         this.saldo += valor;
     }
 
-    public void sacar(double valor){
+    public void sacar(double valor) {
         validaSaque(valor);
         this.saldo -= valor;
     }
@@ -60,8 +60,14 @@ public class ContaBancaria {
         if (valor > saldo) {
             throw new ExcecaoDeNegocio("Saldo insuficiente");
         }
-        if (valor > limiteSaque){
-            throw new ExcecaoDeNegocio ("Limite de saque excedido");
+        if (valor > limiteSaque) {
+            throw new ExcecaoDeNegocio("Limite de saque excedido");
+        }
+    }
+
+    public static void validaNumero(int numero) {
+        if (numero < 0) {
+            throw new ExcecaoDeNegocio("O numero precisa ser maior que zero");
         }
     }
 
