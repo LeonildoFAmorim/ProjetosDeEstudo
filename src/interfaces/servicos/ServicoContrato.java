@@ -19,7 +19,7 @@ public class ServicoContrato {
             double parcelaAtualizada = parcelaBasica + servicoPagamentoOnline.calculaJuros(parcelaBasica, i);
             double valorTotal = parcelaAtualizada + servicoPagamentoOnline.calculaTaxaPagamento(parcelaAtualizada);
             Date dataVencimento = adicinaMes(contrato.getData(), i);
-            contrato.getParcelas().add(new Parcela(dataVencimento, valorTotal));
+            contrato.adicionarParcela(new Parcela(dataVencimento, valorTotal));
         }
     }
 
