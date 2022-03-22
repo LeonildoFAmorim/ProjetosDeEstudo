@@ -10,7 +10,7 @@ public class Contrato {
     private Date data;
     private double valor;
 
-    List<Parcela> parcelas = new ArrayList<Parcela>();
+    private static List<Parcela> parcelas = new ArrayList<Parcela>();
 
     public Contrato(){
 
