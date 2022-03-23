@@ -1,4 +1,4 @@
-Nesse exercício são aplicados os conceitos de listas estáticas, como acessar uma coleção da própria classe.
+Nesse exercício são aplicados os conceitos de atributos e métodos estáticos (static).
 
 O programa consiste em ler as notas de uma determinada quantia de alunos determinada pelo o usuário. O programa calcula:
 
