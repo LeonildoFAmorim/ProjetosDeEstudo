@@ -1,0 +1,9 @@
+Nesse exercício são aplicados os conceitos de listas estáticas, como acessar uma coleção da própria classe.
+
+O programa consiste em ler as notas de uma determinada quantia de alunos determinada pelo o usuário. O programa calcula:
+
+A média das notas de cada aluno;
+Quais os alunos foram aprovados dada uma média mínima de aprovação;
+Quais os alunos ficaram de recuperação com base em uma média mínima para recuperação;
+Quais os alunos foram aprovados;
+Maior e menor méida da turnma.
