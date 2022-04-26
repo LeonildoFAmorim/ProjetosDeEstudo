@@ -1,6 +1,6 @@
-package arquivos.aplicacao;
+package arquivos.itens.aplicacao;
 
-import arquivos.entidades.Item;
+import arquivos.itens.entidades.Item;
 
 import java.io.*;
 import java.util.ArrayList;

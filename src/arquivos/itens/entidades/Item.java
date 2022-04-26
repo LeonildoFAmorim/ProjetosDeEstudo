@@ -1,4 +1,4 @@
-package arquivos.entidades;
+package arquivos.itens.entidades;
 
 public class Item {
     private String nome;

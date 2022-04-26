@@ -1,0 +1,1 @@
+Ler as notas de alunos salvo em um arquivo txt e gerar um outro arquivo txt com a média de cada aluno.

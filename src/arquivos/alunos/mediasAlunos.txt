@@ -1,0 +1,5 @@
+Leonildo =  media: 6,80
+Marinalva =  media: 6,50
+Giovana =  media: 6,33
+Gabril =  media: 6,25
+Liza =  media: 6,50
